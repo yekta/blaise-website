@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+/*! Colors START */
+$orange-my: #FAAB2F;
+$light-my: #FFFFFF;
+$dark-my: #000000;
+$darkish-gray: #6B6C71;
+$purple: #8387B6;
+$light-gray: #B5B5BF;
+/*! Colors END */
+
+/*! Fonts START */
+$font-family-sans-serif: "Metropolis", sans-serif; /*! Font END */
+
+/*! Color Variables START */
+$theme-colors: (
+  "primary": $orange-my,
+  "secondary": $purple,
+  "info": $darkish-gray,
+  "dark": $dark-my,
+  "success": $orange-my,
+  "light": $light-gray,
+  "danger": $orange-my
+); /*! Color Variables END */
+
+/*! Font Import Start */
+@font-face {
+    font-family: 'Metropolis';
+    src: url('fonts/Metropolis-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Metropolis-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Metropolis-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/Metropolis-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Metropolis-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url('fonts/Metropolis-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Metropolis-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Metropolis-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/Metropolis-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Metropolis-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: 700;
+    font-style: normal;
+}/*! Font Import END */
+
+/*! Bootstrap START */
+@import "scss/functions.scss"; 
+@import "scss/variables.scss"; 
+@import "scss/mixins.scss"; 
+@import "scss/grid.scss"; 
+@import "scss/navbar.scss"; 
+@import "scss/utilities.scss"; 
+@import "scss/mixins.scss"; 
+@import "scss/reboot.scss"; 
+@import "scss/type.scss"; 
+@import "scss/buttons.scss";
+/*! Bootstrap END */
+
+/*! Body & Hero START */
+body{
+    font-family: 'Metropolis', sans-serif;
+    background: $orange-my;
+}
+/*! Body & Hero END */
+
+// @include respond-above(sm) {}
+@mixin respond-above($breakpoint) {
+    // If the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Get the breakpoint value.
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+      // Write the media query.
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    // If the breakpoint doesn't exist in the map.
+    } @else {
+      // Log a warning.
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
+    }
+  }
+  
+  // A map of breakpoints.
+  $breakpoints: (
+    xs: 576px,
+    sm: 768px,
+    md: 992px,
+    lg: 1200px
+);
+
+.margin-hero-text{
+    margin-top: 2rem;
+}
+
+
+/*! BTN NOWRAP FIX START */
+.btn {
+    white-space: normal;
+} /*! BTN NOWRAP FIX END */
+
+/*! Miscellaneous START */
+.w300{
+    font-weight: 300;
+}
+.w400{
+    font-weight: 400;
+}
+.w600{
+    font-weight: 600;
+}
+.w700{
+    font-weight: 700;
+}
+/*! Miscellaneous START */
+
+/*! Miscellaneous START */
+.z-top {
+    z-index: 100;
+}
+.absolute {
+    position: absolute;
+}
+.grow-1{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1); 
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.grow-1:hover{
+    -webkit-transform: scale(1.2); 
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.grow-2{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1); 
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.grow-2:hover{
+    -webkit-transform: scale(1.1); 
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.btn-my{
+    -webkit-box-shadow: 0rem 1rem 2rem 0rem rgba($dark-my, 0.08); /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0rem 1rem 2rem 0rem rgba($dark-my, 0.08);
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    border-radius: 8px;
+}
+.btn-my:hover{
+    -webkit-box-shadow: 0rem 1.5rem 3rem 0rem rgba($dark-my, 0.05); /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0rem 1.5rem 3rem 0rem rgba($dark-my, 0.05);
+}
+
+.logo{
+    width: 8rem;
+}
+
+.appditto-logo{
+    height: 1.75em;
+}
+/*! Miscellaneous END */
+
+.bg-hero{
+    background-image: url("assets/bg-hero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+}
+
+.bg-operations{
+    background-image: url("assets/bg-operations.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    margin-top: -200px;
+}
+
+.bg-contacts{
+    background-image: url("assets/bg-contacts.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    margin-top: -250px;
+}
+
+.bg-notifications{
+    background-image: url("assets/bg-notifications.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    margin-top: -250px;
+}
+
+.bg-darkpattern{
+    background-image: url("assets/bg-darkpattern.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+button{
+    border: none;
+}
+
+h1, .h1{
+    font-size: 1.75rem;
+}
+
+.container-my{  
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.img-button{
+    height: 2.5rem;
+}
+
+a, a:hover{
+    color: $purple;
+}
+.icon-my{
+    width: 4rem;
+}
+@include respond-above(sm){
+    .bg-hero{
+        height: 550px;
+    }
+    .bg-operations{
+        height: 300px;
+        margin-top: -300px;
+    }
+    .bg-contacts{
+        height: 200px;
+        margin-top: -200px;
+    }
+    .bg-notifications{
+        height: 200px;
+        margin-top: -200px;
+    }
+    h1, .h1{
+        font-size: 2.5rem;
+    }
+    .img-button{
+        height: 2.5rem;
+    }
+}
+
+@include respond-above(md){
+    .bg-hero{
+        height: 600px;
+    }
+    .bg-operations{
+        height: 450px;
+        margin-top: -450px;
+    }
+    .bg-contacts{
+        height: 250px;
+        margin-top: -250px;
+    }
+    .bg-notifications{
+        height: 250px;
+        margin-top: -250px;
+    }
+    
+}
+
+@include respond-above(lg){
+    .container-my{
+          width: 1200px;
+          
+    } 
+    .margin-hero-text{
+        margin-top: 8rem;
+    }   
+}
