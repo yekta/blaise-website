@@ -45,7 +45,7 @@
     <meta name="twitter:description" content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
     <meta name="twitter:image" content="https://blaisewallet.com/assets/preview.jpg">
 
-    <link href="main.min.css" rel="stylesheet">
+    <link href="main-v2.min.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -61,14 +61,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#FAAB2F">
-    <meta name="msapplication-TileColor" content="#FAAB2F">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#F9B233">
+    <meta name="msapplication-TileColor" content="#F9B233">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-    <meta name="theme-color" content="#FAAB2F">
+    <meta name="theme-color" content="#F9B233">
 
 </head>
 
-<body>
+<body onscroll="switchFunction()">
     <div class="bg-white">
         <div class="bg-hero" id="getstarted"></div>
         <!-- NAVBAR -->
@@ -172,7 +172,7 @@
                         <img class="w-100" src="assets/notifications-image.png" alt="Notifications Image">
                     </div>
                     <div class="col-12 col-md-7 col-lg-6 my-auto">
-                        <h2 class="h1 w700 text-center text-md-left text-primary mt-4 mr-md-5">
+                        <h2 class="h1 w700 text-center text-md-left text-primary mt-4 mr-md-5" id="ding">
                             Ding…<br>You received Pascal.
                         </h2>
                         <div class="h5 w400 text-center text-md-left text-info mt-2 mr-md-5 mb-md-5">
@@ -189,14 +189,14 @@
 
         </div>
         <!-- NOTIFICATIONS END -->
-
-        <div class="bg-darkpattern pt-5">
+        <div id="switch"></div>
+        <div class="bg-darkpattern pt-5" id="darksection">
             <!-- DARK MODE -->
             <div class="section mt-4" id="themes">
                 <div class="container-my mx-auto">
                     <div class="row justify-content-center d-flex mb-4">
                         <div class="col-12 col-md-7 col-lg-6 my-auto px-lg-5">
-                            <h2 class="h1 w700 text-center text-md-right text-secondary mt-4 ml-md-5">
+                            <h2 class="h1 w700 text-center text-md-right text-secondary mt-4 ml-md-5" id="late">
                                 Is it getting late?<br>No problem.
                             </h2>
                             <div class="h5 w400 text-center text-md-right text-light mt-2 ml-md-5 mb-md-5">
@@ -210,7 +210,6 @@
                 </div>
             </div>
             <!-- DARKMODE END -->
-
             <!-- LANGUAGES -->
             <div class="section mt-4" id="languages">
                 <div class="container-my mx-auto">
@@ -283,13 +282,25 @@
                                             class="appditto-logo grow-2 mx-2 mb-2" src="assets/appditto-logo.svg" alt="Appditto Logo"></a></div>
                             </p>
                         </div>
-
                     </div>
                 </div>
             </footer>
             <!-- FOOTER END -->
         </div>
     </div>
+    <script>
+        var metaThemeColor = document.querySelector("meta[name=theme-color]");
+        var late = document.getElementById("switch");
+        var lateOffsetTop = late.offsetTop;
+        function switchFunction() {
+        if (window.pageYOffset >= lateOffsetTop) {
+            document.body.style.background = "#16161C";
+            metaThemeColor.setAttribute("content", "16161C");
+        } else {
+            document.body.style.background = "#F9B233";
+            metaThemeColor.setAttribute("content", "#F9B233");
+            }
+        }
+    </script>
 </body>
-
 </html>
