@@ -179,7 +179,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    height: 500px;
+    height: 450px;
     width: 100%;
     position: absolute;
 }
@@ -274,15 +274,15 @@ a, a:hover{
 
 @include respond-above(md){
     .bg-hero{
-        height: 600px;
+        height: 585px;
     }
     .bg-operations{
-        height: 450px;
-        margin-top: -450px;
+        height: 350px;
+        margin-top: -350px;
     }
     .bg-contacts{
-        height: 250px;
-        margin-top: -250px;
+        height: 220px;
+        margin-top: -220px;
     }
     .bg-notifications{
         height: 250px;

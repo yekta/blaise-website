@@ -45,7 +45,7 @@
     <meta name="twitter:description" content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
     <meta name="twitter:image" content="https://blaisewallet.com/assets/preview.jpg">
 
-    <link href="main-v2.min.css" rel="stylesheet">
+    <link href="main-v3.min.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -97,21 +97,24 @@
                     </div>
                     <div class="col-12 mx-auto d-flex justify-content-center">
                         <div class="row justify-content-center d-flex">
-                            <button class="px-3 px-md-4 py-2 bg-white btn-my mx-3 mt-3 grow-2">
-                                <a href="https://testflight.apple.com/join/hd72GGk2?source=post_page" target="_blank"><img
-                                        class="img-button" src="/assets/button-appstore-orange.svg" alt="App Store Button"></a>
+                            <button class="bg-white btn-my mx-3 mt-3 grow-2">
+                                <a href="https://testflight.apple.com/join/hd72GGk2?source=post_page" target="_blank">
+                                    <div class="px-3 px-md-4 py-2 "><img
+                                        class="img-button" src="/assets/button-appstore-orange.svg" alt="App Store Button"></div>
+                                    </a>
                             </button>
-                            <a href="https://play.google.com/apps/testing/com.appditto.blaise?source=post_page" target="_blank">
-                                <button class="px-3 px-md-4 py-2 bg-white btn-my mx-3 mt-3 grow-2">
+                                <button class="bg-white btn-my mx-3 mt-3 grow-2">
                                     <a href="https://play.google.com/apps/testing/com.appditto.blaise?source=post_page"
                                         target="_blank">
-                                        <img class="img-button" src="/assets/button-playstore-orange.svg" alt="App Store Button"></a>
+                                        <div class="px-3 px-md-4 py-2">
+                                        <img class="img-button" src="/assets/button-playstore-orange.svg" alt="App Store Button"></div></a>
                                 </button>
-                            </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-9 col-lg-7 mt-4 px-2 mx-auto">
-                        <img class="w-100" src="assets/hero-image.png" alt="Hero Image">
+                    <div class="col-12 col-md-9 col-lg-7 mt-4 px-0 mx-auto">
+                        <div class="col-md-11 mx-auto px-0">
+                            <img class="w-100" src="assets/hero-image.png" alt="Hero Image">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,7 +135,7 @@
                             your account for sale or transfer your account.
                         </div>
                     </div>
-                    <div class="col-12 col-md-9 col-lg-9 mt-4 mt-md-5 px-2 mx-auto">
+                    <div class="col-12 col-md-9 col-lg-8 mt-4 mt-md-5 px-2 mx-auto">
                         <img class="w-100" src="assets/operations-image.png" alt="Operations Image">
                     </div>
                 </div>
@@ -142,21 +145,23 @@
         <!-- OPERATIONS END -->
 
         <!-- CONTACTS -->
-        <div class="section mt-4" id="contacts">
+        <div class="section mt-4 pt-5" id="contacts">
             <div class="container-my mx-auto">
                 <div class="row justify-content-center d-flex mb-4">
-                    <div class="col-12 col-md-7 col-lg-6 my-auto px-lg-5">
-                        <h2 class="h1 w700 text-center text-md-right text-primary mt-4 ml-md-5">
-                            Add your friends & family to contacts.
+                    <div class="col-12 col-md-6 my-auto px-lg-5">
+                        <h2 class="h1 w700 text-center text-md-right text-primary mt-4">
+                            <div class="pl-lg-2">Add your friends & family to contacts.</div>
                         </h2>
-                        <div class="h5 w400 text-center text-md-right text-info mt-2 ml-md-5 mb-md-5">
+                        <div class="h5 w400 text-center text-md-right text-info mt-2 ml-md-5 mb-md-5 pb-md-5">
                             Don’t wanna deal with account numbers? Just add people to your contacts, and reach them
                             later
                             on with a single tap.
                         </div>
                     </div>
                     <div class="col-9 col-md-5 col-lg-4 my-4 my-md-5 px-2 mx-auto">
-                        <img class="w-100" src="assets/contacts-image.png" alt="Contacts Image">
+                        <div class="col-12 col-md-11 justify-content-start">
+                            <img class="w-100" src="assets/contacts-image.png" alt="Contacts Image">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -165,11 +170,13 @@
         <!-- CONTACTS END -->
 
         <!-- NOTIFICATIONS -->
-        <div class="section mt-4" id="notifications">
+        <div class="section mt-4 pt-5" id="notifications">
             <div class="container-my mx-auto">
                 <div class="row justify-content-center d-flex mb-4">
                     <div class="col-9 col-md-5 col-lg-4 my-4 my-md-5 px-2 mx-auto d-none d-md-block">
-                        <img class="w-100" src="assets/notifications-image.png" alt="Notifications Image">
+                        <div class="col-12 col-md-11 mx-auto">
+                            <img class="w-100" src="assets/notifications-image.png" alt="Notifications Image">
+                        </div>
                     </div>
                     <div class="col-12 col-md-7 col-lg-6 my-auto">
                         <h2 class="h1 w700 text-center text-md-left text-primary mt-4 mr-md-5" id="ding">
@@ -182,7 +189,9 @@
                         </div>
                     </div>
                     <div class="col-9 col-md-5 col-lg-4 my-4 my-md-5 px-2 mx-auto b-lock d-md-none">
+                            <div class="col-12 col-md-11 mx-auto">
                         <img class="w-100" src="assets/notifications-image.png" alt="Notifications Image">
+                    </div>
                     </div>
                 </div>
             </div>
@@ -204,7 +213,9 @@
                             </div>
                         </div>
                         <div class="col-9 col-md-5 col-lg-4 my-4 my-md-5 px-2 mx-auto">
-                            <img class="w-100" src="assets/darkmode-image.png" alt="Dark Mode Image">
+                                <div class="col-12 col-md-11 mx-auto">
+                                <img class="w-100" src="assets/darkmode-image.png" alt="Dark Mode Image">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,19 +226,23 @@
                 <div class="container-my mx-auto">
                     <div class="row justify-content-center d-flex mb-4">
                         <div class="col-9 col-md-5 col-lg-4 my-4 my-md-5 px-2 mx-auto d-none d-md-block">
-                            <img class="w-100" src="assets/languages-image.png" alt="Languages Image">
+                            <div class="col-12 col-md-11 mx-auto">
+                                <img class="w-100" src="assets/languages-image.png" alt="Languages Image">
+                            </div>
                         </div>
                         <div class="col-12 col-md-7 col-lg-6 my-auto">
                             <h2 class="h1 w700 text-center text-md-left text-secondary mt-4 mr-md-5">
                                 你懂这种语言吗?
                             </h2>
                             <div class="h5 w400 text-center text-md-left text-light mt-2 mr-md-5 mb-md-5">
-                                You don’t need to understand that, because chances are, we support a language that you
+                                You don’t need to understand that language, because chances are, we support a language that you
                                 can.
                             </div>
                         </div>
                         <div class="col-9 col-md-5 col-lg-4 my-4 my-md-5 px-2 mx-auto b-lock d-md-none">
-                            <img class="w-100" src="assets/languages-image.png" alt="Languages Image">
+                            <div class="col-12 col-md-11 mx-auto">
+                                <img class="w-100" src="assets/languages-image.png" alt="Languages Image">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,14 +260,15 @@
                         </div>
                         <div class="col-12 mx-auto d-flex justify-content-center">
                             <div class="row justify-content-center d-flex">
-                                <button class="px-3 px-md-4 py-2 bg-secondary btn-my mx-3 mt-3 grow-2">
+                                <button class="bg-secondary btn-my mx-3 mt-3 grow-2">
                                     <a href="https://testflight.apple.com/join/hd72GGk2?source=post_page" target="_blank">
-                                        <img class="img-button" src="/assets/button-appstore-dark.svg" alt="App Store Button"></a>
+                                        <div class="px-3 px-md-4 py-2"><img class="img-button" src="/assets/button-appstore-dark.svg" alt="App Store Button"></div></a>
                                 </button>
-                                <button class="px-3 px-md-4 py-2 bg-secondary btn-my mx-3 mt-3 grow-2">
+                                <button class="bg-secondary btn-my mx-3 mt-3 grow-2">
                                     <a href="https://play.google.com/apps/testing/com.appditto.blaise?source=post_page"
                                         target="_blank">
-                                        <img class="img-button" src="/assets/button-playstore-dark.svg" alt="App Store Button"></a>
+                                        <div class="px-3 px-md-4 py-2">
+                                        <img class="img-button" src="/assets/button-playstore-dark.svg" alt="App Store Button"></div></a>
                                 </button>
                             </div>
                         </div>
