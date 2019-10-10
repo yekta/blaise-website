@@ -76,6 +76,22 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/blaise-borrow.gif": {
+		"ft": 4194304,
+		"iS": 2701364,
+		"oA": 0,
+		"oAP": "\/assets\/blaise-borrow.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/blaise-send.gif": {
+		"ft": 4194304,
+		"iS": 2950400,
+		"oA": 0,
+		"oAP": "\/assets\/blaise-send.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/assets\/button-appstore-dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -186,6 +202,17 @@
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/hero-mockup.png": {
+		"ft": 32768,
+		"iS": 303090,
+		"oA": 0,
+		"oAP": "\/assets\/hero-mockup.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},

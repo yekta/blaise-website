@@ -6,7 +6,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145357881-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-145357881-1');
@@ -14,11 +17,13 @@
 
     <!-- Google Image -->
     <script type="application/ld+json">
-    {"@context" : "http://schema.org",
-     "@type" : "Organization",  
-      "name" : "Blaise Wallet",
-      "url" : "https://blaisewallet.com", 
-      "logo": "https://blaisewallet.com/assets/logo.png" }
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Blaise Wallet",
+            "url": "https://blaisewallet.com",
+            "logo": "https://blaisewallet.com/assets/logo.png"
+        }
     </script>
     <!-- Google Image END -->
 
@@ -26,23 +31,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blaise Wallet</title>
-    <meta name="description" content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
+    <meta name="description"
+        content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Blaise Wallet">
-    <meta itemprop="description" content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
+    <meta itemprop="description"
+        content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
     <meta itemprop="image" content="https://blaisewallet.com/assets/preview.jpg">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://sinenur.art">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Blaise Wallet">
-    <meta property="og:description" content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
+    <meta property="og:description"
+        content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
     <meta property="og:image" content="https://blaisewallet.com/assets/preview.jpg">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Blaise Wallet">
-    <meta name="twitter:description" content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
+    <meta name="twitter:description"
+        content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
     <meta name="twitter:image" content="https://blaisewallet.com/assets/preview.jpg">
 
     <link href="main-v3.min.css" rel="stylesheet">
@@ -65,7 +74,26 @@
     <meta name="msapplication-TileColor" content="#F9B233">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#F9B233">
+    <script>
+        function initFreshChat() {
+            window.fcWidget.init({
+                token: "f97dcb39-6a81-4bc2-b4b0-e3d66e50967e",
+                host: "https://wchat.freshchat.com"
+            });
+        }
 
+        function initialize(i, t) {
+            var e;
+            i.getElementById(t) ? initFreshChat() : ((e = i.createElement("script")).id = t, e.async = !0, e.src =
+                "https://wchat.freshchat.com/js/widget.js", e.onload = initFreshChat, i.head.appendChild(e))
+        }
+
+        function initiateCall() {
+            initialize(document, "freshchat-js-sdk")
+        }
+        window.addEventListener ? window.addEventListener("load", initiateCall, !1) : window.attachEvent("load",
+            initiateCall, !1);
+    </script>
 </head>
 
 <body onscroll="switchFunction()">
@@ -78,7 +106,8 @@
                     <a class="mx-md-4" href="/">
                         <img class="logo my-auto grow-2" src="/assets/logo.svg" alt="Logo">
                     </a>
-                    <a class="w700 mx-md-4 h5 text-white d-none d-md-block" href="https://pascalcoin.org" target="_blank">
+                    <a class="w700 mx-md-4 h5 text-white d-none d-md-block" href="https://pascalcoin.org"
+                        target="_blank">
                         What is Pascal?
                     </a>
                 </div>
@@ -98,17 +127,20 @@
                     <div class="col-12 mx-auto d-flex justify-content-center">
                         <div class="row justify-content-center d-flex">
                             <button class="bg-white btn-my mx-3 mt-3 grow-2">
-                                <a href="https://apps.apple.com/us/app/blaise-pascal-wallet/id1473011216" target="_blank">
-                                    <div class="px-3 px-md-4 py-2 "><img
-                                        class="img-button" src="/assets/button-appstore-orange.svg" alt="App Store Button"></div>
-                                    </a>
+                                <a href="https://apps.apple.com/us/app/blaise-pascal-wallet/id1473011216"
+                                    target="_blank">
+                                    <div class="px-3 px-md-4 py-2 "><img class="img-button"
+                                            src="/assets/button-appstore-orange.svg" alt="App Store Button"></div>
+                                </a>
                             </button>
-                                <button class="bg-white btn-my mx-3 mt-3 grow-2">
-                                    <a href="https://play.google.com/store/apps/details?id=com.appditto.blaise"
-                                        target="_blank">
-                                        <div class="px-3 px-md-4 py-2">
-                                        <img class="img-button" src="/assets/button-playstore-orange.svg" alt="App Store Button"></div></a>
-                                </button>
+                            <button class="bg-white btn-my mx-3 mt-3 grow-2">
+                                <a href="https://play.google.com/store/apps/details?id=com.appditto.blaise"
+                                    target="_blank">
+                                    <div class="px-3 px-md-4 py-2">
+                                        <img class="img-button" src="/assets/button-playstore-orange.svg"
+                                            alt="App Store Button"></div>
+                                </a>
+                            </button>
                         </div>
                     </div>
                     <div class="col-12 col-md-9 col-lg-7 mt-4 px-0 mx-auto">
@@ -189,9 +221,9 @@
                         </div>
                     </div>
                     <div class="col-9 col-md-5 col-lg-4 my-4 my-md-5 px-2 mx-auto b-lock d-md-none">
-                            <div class="col-12 col-md-11 mx-auto">
-                        <img class="w-100" src="assets/notifications-image.png" alt="Notifications Image">
-                    </div>
+                        <div class="col-12 col-md-11 mx-auto">
+                            <img class="w-100" src="assets/notifications-image.png" alt="Notifications Image">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,11 +241,12 @@
                                 Is it getting late?<br>No problem.
                             </h2>
                             <div class="h5 w400 text-center text-md-right text-light mt-2 ml-md-5 mb-md-5">
-                                Enjoy the dark mode. We crafted it carefully down to every color, animation, and illustration.
+                                Enjoy the dark mode. We crafted it carefully down to every color, animation, and
+                                illustration.
                             </div>
                         </div>
                         <div class="col-9 col-md-5 col-lg-4 my-4 my-md-5 px-2 mx-auto">
-                                <div class="col-12 col-md-11 mx-auto">
+                            <div class="col-12 col-md-11 mx-auto">
                                 <img class="w-100" src="assets/darkmode-image.png" alt="Dark Mode Image">
                             </div>
                         </div>
@@ -235,7 +268,8 @@
                                 你懂这种语言吗?
                             </h2>
                             <div class="h5 w400 text-center text-md-left text-light mt-2 mr-md-5 mb-md-5">
-                                You don’t need to understand that language, because chances are, we support a language that you
+                                You don’t need to understand that language, because chances are, we support a language
+                                that you
                                 can.
                             </div>
                         </div>
@@ -261,14 +295,19 @@
                         <div class="col-12 mx-auto d-flex justify-content-center">
                             <div class="row justify-content-center d-flex">
                                 <button class="bg-secondary btn-my mx-3 mt-3 grow-2">
-                                    <a href="https://apps.apple.com/us/app/blaise-pascal-wallet/id1473011216" target="_blank">
-                                        <div class="px-3 px-md-4 py-2"><img class="img-button" src="/assets/button-appstore-dark.svg" alt="App Store Button"></div></a>
+                                    <a href="https://apps.apple.com/us/app/blaise-pascal-wallet/id1473011216"
+                                        target="_blank">
+                                        <div class="px-3 px-md-4 py-2"><img class="img-button"
+                                                src="/assets/button-appstore-dark.svg" alt="App Store Button"></div>
+                                    </a>
                                 </button>
                                 <button class="bg-secondary btn-my mx-3 mt-3 grow-2">
                                     <a href="https://play.google.com/store/apps/details?id=com.appditto.blaise"
                                         target="_blank">
                                         <div class="px-3 px-md-4 py-2">
-                                        <img class="img-button" src="/assets/button-playstore-dark.svg" alt="App Store Button"></div></a>
+                                            <img class="img-button" src="/assets/button-playstore-dark.svg"
+                                                alt="App Store Button"></div>
+                                    </a>
                                 </button>
                             </div>
                         </div>
@@ -283,19 +322,20 @@
                     <div class="container-my mx-auto py-2">
                         <div class="row justify-content-center mt-4 d-flex">
                             <div class="social mx-auto">
-                                <a class="px-1" href="https://twitter.com/appditto" target="_blank"><img class="icon-my grow-1"
-                                        src="assets/button-twitter.svg" alt="Twitter"></a>
-                                <a class="px-1" href="https://medium.com/appditto" target="_blank"><img class="icon-my grow-1"
-                                        src="assets/button-medium.svg" alt="Medium"></a>
-                                <a class="px-1" href="https://github.com/appditto" target="_blank"><img class="icon-my grow-1"
-                                        src="assets/button-github.svg" alt="Github"></a>
-                                <a class="px-1" href="https://instagram.com/appditto" target="_blank"><img class="icon-my grow-1"
-                                        src="assets/button-instagram.svg" alt="Instagram"></a>
+                                <a class="px-1" href="https://twitter.com/appditto" target="_blank"><img
+                                        class="icon-my grow-1" src="assets/button-twitter.svg" alt="Twitter"></a>
+                                <a class="px-1" href="https://medium.com/appditto" target="_blank"><img
+                                        class="icon-my grow-1" src="assets/button-medium.svg" alt="Medium"></a>
+                                <a class="px-1" href="https://github.com/appditto" target="_blank"><img
+                                        class="icon-my grow-1" src="assets/button-github.svg" alt="Github"></a>
+                                <a class="px-1" href="https://instagram.com/appditto" target="_blank"><img
+                                        class="icon-my grow-1" src="assets/button-instagram.svg" alt="Instagram"></a>
                             </div>
                             <p class="col-12 px-4 text-center w400 mt-3 mt-md-4">
                                 <span class="text-secondary">©2019, Blaise.</span>
-                                <div class="text-secondary mt-1 mb-4">Made by<a href="https://appditto.com" target="_blank"><img
-                                            class="appditto-logo grow-2 mx-2 mb-2" src="assets/appditto-logo.svg" alt="Appditto Logo"></a></div>
+                                <div class="text-secondary mt-1 mb-4">Made by<a href="https://appditto.com"
+                                        target="_blank"><img class="appditto-logo grow-2 mx-2 mb-2"
+                                            src="assets/appditto-logo.svg" alt="Appditto Logo"></a></div>
                             </p>
                         </div>
                     </div>
@@ -308,15 +348,17 @@
         var metaThemeColor = document.querySelector("meta[name=theme-color]");
         var late = document.getElementById("switch");
         var lateOffsetTop = late.offsetTop;
+
         function switchFunction() {
-        if (window.pageYOffset >= lateOffsetTop) {
-            document.body.style.background = "#16161C";
-            metaThemeColor.setAttribute("content", "#16161C");
-        } else {
-            document.body.style.background = "#F9B233";
-            metaThemeColor.setAttribute("content", "#F9B233");
+            if (window.pageYOffset >= lateOffsetTop) {
+                document.body.style.background = "#16161C";
+                metaThemeColor.setAttribute("content", "#16161C");
+            } else {
+                document.body.style.background = "#F9B233";
+                metaThemeColor.setAttribute("content", "#F9B233");
             }
         }
     </script>
 </body>
+
 </html>
