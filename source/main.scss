@@ -326,11 +326,14 @@ a, a:hover{
     position: fixed;
     width: 100%;
     display: flex;
-    margin-top: 30vh;
+    margin-top: 40vh;
     align-content: center;
     justify-content: center;
 }
 
+.bg-support{
+    background-color: #F7941F;
+}
 .cursorPointer{
     cursor: pointer;
 }
