@@ -184,6 +184,15 @@ body{
     position: absolute;
 }
 
+.bg-square{
+    background-image: url("assets/bg-square.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
 .bg-operations{
     background-image: url("assets/bg-operations.svg");
     background-repeat: no-repeat;
@@ -271,7 +280,9 @@ a, a:hover{
         height: 2.5rem;
     }
 }
-
+.support-text{
+    width: 80%;
+}
 @include respond-above(md){
     .bg-hero{
         height: 585px;
@@ -288,7 +299,9 @@ a, a:hover{
         height: 250px;
         margin-top: -250px;
     }
-    
+    .support-text{
+        width: 40%;
+    }   
 }
 
 @include respond-above(lg){
@@ -299,4 +312,25 @@ a, a:hover{
     .margin-hero-text{
         margin-top: 8rem;
     }   
+}
+
+.position-footer{
+    position: fixed;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    width: 100%;
+}
+
+.support-text-div{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    margin-top: 30vh;
+    align-content: center;
+    justify-content: center;
+}
+
+.cursorPointer{
+    cursor: pointer;
 }

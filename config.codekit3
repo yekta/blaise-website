@@ -16,6 +16,16 @@
 		"oAP": "\/.htaccess",
 		"oF": 0
 		},
+	"\/assets\/appditto-logo.1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/appditto-logo.1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/appditto-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -76,6 +86,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/bg-square.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/bg-square.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/blaise-borrow.gif": {
 		"ft": 4194304,
 		"iS": 2701364,
@@ -112,6 +132,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/button-github.1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/button-github.1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/button-github.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -122,11 +152,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/button-instagram.1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/button-instagram.1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/button-instagram.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/button-instagram.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/button-medium.1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/button-medium.1.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -157,6 +207,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/button-playstore-orange.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/button-twitter.1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/button-twitter.1.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -224,6 +284,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/logo-square.png": {
+		"ft": 32768,
+		"iS": 80081,
+		"oA": 0,
+		"oAP": "\/assets\/logo-square.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -630,13 +701,13 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
-	"\/main-v3.min.css": {
+	"\/main-v5.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/main-v3.min-min.css",
+		"oAP": "\/main-v5.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -673,7 +744,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/main-v3.min.css",
+		"oAP": "\/main-v5.min.css",
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
@@ -1807,6 +1878,13 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/support\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/support\/index.html",
+		"oF": 0
 		}
 	},
 "hooks": [
