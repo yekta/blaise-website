@@ -54,7 +54,7 @@
         content="Simple, sleek & secure Pascal wallet with real-time notifications, contacts, themes, multi-language support and more.">
     <meta name="twitter:image" content="https://blaisewallet.com/assets/preview.jpg">
 
-    <link href="../main-v7.min.css" rel="stylesheet">
+    <link href="../main-v8.min.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
@@ -86,7 +86,9 @@
                         <div id="ripple2"></div>
                     </div>
                 </div>
-                <h1 class="w600" id="connectingText">Connecting</h1>
+                <div class="row justify-content-center">
+                    <h1 class="w600" id="connectingText">Connecting</h1>
+                </div>
             </div>
         </div>
     </div>
@@ -95,6 +97,7 @@
     let params = new URLSearchParams(document.location.search.substring(1));
     let fcBackgroundColor = params.get("fcBackgroundColor");
     let fcForegroundColor = params.get("fcForegroundColor");
+    let loadingText = params.get("loadingText");
     if (fcBackgroundColor == null) {
         // Parameter was empty, set a default
         fcBackgroundColor = 'F7941F';
@@ -103,9 +106,14 @@
         // Parameter was empty, set a default
         fcForegroundColor = 'FFFFFF';
     }
-
+    if (loadingText == null) {
+        // Parameter was empty, set a default
+        loadingText = 'Connecting';
+    }
     document.getElementById("bgSupportDiv").style.backgroundColor = "#" + fcBackgroundColor;
     document.getElementById("connectingText").style.color = "#" + fcForegroundColor;
+    document.getElementById("support-div").style.marginTop = "25vh";
+    document.getElementById("connectingText").innerHTML = loadingText;
     document.getElementById("ripple1").style.borderColor = "#" + fcForegroundColor;
     document.getElementById("ripple2").style.borderColor = "#" + fcForegroundColor;
     var buttonDiv = `<a onclick="openFreshchat()">
@@ -133,6 +141,7 @@
         window.fcWidget.on("widget:loaded", function (resp) {
             console.log('Widget Loaded');
             document.getElementById("support-div").innerHTML = buttonDiv;
+            document.getElementById("support-div").style.marginTop = "35vh";
         });
     }
 
