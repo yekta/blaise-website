@@ -74,36 +74,6 @@
     <meta name="msapplication-TileColor" content="#F9B233">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#F9B233">
-    <script>
-        function initFreshChat() {
-            window.fcWidget.init({
-                token: "2b41cea3-726b-4997-824a-362482ec8858",
-                host: "https://wchat.freshchat.com",
-                siteId: "Blaise",
-                config: {
-                    headerProperty: {
-                        //If you have multiple sites you can use the appName and appLogo to overwrite the values.
-                        appName: 'Blaise',
-                        appLogo: 'https://blaisewallet.com/assets/logo-square.png',
-                        backgroundColor: '#E68E00',
-                        foregroundColor: '#FFFFFF',
-                    },
-                }
-            });
-        }
-
-        function initialize(i, t) {
-            var e;
-            i.getElementById(t) ? initFreshChat() : ((e = i.createElement("script")).id = t, e.async = !0, e.src =
-                "https://wchat.freshchat.com/js/widget.js", e.onload = initFreshChat, i.head.appendChild(e))
-        }
-
-        function initiateCall() {
-            initialize(document, "freshchat-js-sdk")
-        }
-        window.addEventListener ? window.addEventListener("load", initiateCall, !1) : window.attachEvent("load",
-            initiateCall, !1);
-    </script>
 </head>
 
 <body onscroll="switchFunction()">
